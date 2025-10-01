@@ -1,7 +1,9 @@
-on:
-  workflow_dispatch:   # Manual trigger button in Actions tab
-  schedule:
-    - cron: '*/2 * * * *'
+name: schedule2min
+
+on: [push]
+  # workflow_dispatch:   # Manual trigger button in Actions tab
+  # schedule:
+  #   - cron: '*/2 * * * *'
 
 jobs:
   myJob:
