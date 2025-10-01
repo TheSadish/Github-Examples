@@ -1,4 +1,3 @@
-name: schedule-2min
 on:
   workflow_dispatch:   # Manual trigger button in Actions tab
   schedule:
