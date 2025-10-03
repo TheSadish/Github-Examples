@@ -7,6 +7,11 @@ on:
                 description: Mention the Env
                 required: true
 
+    push:
+        branches:
+            - test
+            - dev
+
 jobs:
   myJob:
     runs-on: ubuntu-latest
