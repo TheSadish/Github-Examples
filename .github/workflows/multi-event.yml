@@ -1,6 +1,12 @@
 name: multi-event
 
 on:
+    workflow_dispatch:
+        inputs:
+            Env:
+                description: Mention the Env
+                required: true
+
     push:
         branches:
             - test
