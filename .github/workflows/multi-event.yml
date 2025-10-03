@@ -1,0 +1,16 @@
+name: multi-event
+
+on:
+    push:
+        branches:
+            - test
+            - dev
+
+jobs:
+  myJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Just print something
+        run: "Branch getting triggered is ${{ github.ref_name }}"
+           
+        
