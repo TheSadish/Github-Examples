@@ -11,6 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Just print something
-        run: "Branch getting triggered is ${{ github.ref_name }}"
+        run: echo "Branch getting triggered is ${{ github.ref_name }}"
            
         
