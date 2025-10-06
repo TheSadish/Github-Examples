@@ -6,6 +6,10 @@ on:
             Env:
                 description: Mention the Env
                 required: true
+          
+            name:
+              description: Enter your name
+              required: true
 
     push:
         branches:
