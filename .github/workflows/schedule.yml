@@ -1,0 +1,13 @@
+name: schedule2min
+
+on:
+  workflow_dispatch:   # Manual trigger button in Actions tab
+  schedule:
+    - cron: '*/2 * * * 1'
+
+jobs:
+  myJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Just print something
+        run: echo "Printing that it runs every 2 minutes"
