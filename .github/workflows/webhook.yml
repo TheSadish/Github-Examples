@@ -11,8 +11,12 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
-      - name: Run a script
+
+      - name: Print the event type
         run: echo "Event of type $GITHUB_EVENT_NAME"
+
+      - name: Print the payload message
+        run: echo "The message is ${{ github.event.client_payload.whatsmahname }}"
 
 
         
