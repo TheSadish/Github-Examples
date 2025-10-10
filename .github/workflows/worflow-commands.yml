@@ -12,6 +12,11 @@ jobs:
             - name: I want it to fail
               run: echo "::error::Build failed"
 
-            - name: Just to test
-              run: echo "Testing"
+            - name: Group loggin
+              run: |
+                echo "::group::My group message"
+                echo "Message 1"
+                echo "Message 2"
+                echo "::endgroup::"
+
         
