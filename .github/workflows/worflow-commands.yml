@@ -21,8 +21,9 @@ jobs:
 
             - name: Create a variable
               run: |
-                echo "MY_Val=Sadish" >> $GITHUB_ENV
-            
+                echo "MY_Val=Sadish" >> $GITHUB_ENV  
+                # Sets environment variable at runtime        
+                
             - name: Fetch this variable
               run: |
                 echo $MY_Val
