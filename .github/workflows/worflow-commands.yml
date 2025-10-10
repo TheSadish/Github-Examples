@@ -1,0 +1,17 @@
+name: worflow-commands
+
+on: [push]
+
+jobs:
+    commands:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Show a warning
+              run: echo "::warning::This is a warning message"
+            
+            - name: I want it to fail
+              run: echo "::error::Build failed"
+
+            - name: Just to test
+              run: echo "Testing"
+        
