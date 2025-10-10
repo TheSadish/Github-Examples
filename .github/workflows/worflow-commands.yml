@@ -9,7 +9,7 @@ jobs:
             - name: Show a warning
               run: echo "::warning::This is a warning message"
             
-            - name: I want it to fail
+            - name: Show an error
               run: echo "::error::Build failed"
 
             - name: Group loggin
@@ -19,4 +19,12 @@ jobs:
                 echo "Message 2"
                 echo "::endgroup::"
 
+            - name: Create a variable
+              run: |
+                echo "MY_Val=Sadish" >> $GITHUB_ENV
+            
+            - name: Fetch this variable
+              run: |
+                echo $MY_Val
+            
         
