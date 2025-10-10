@@ -10,7 +10,7 @@ jobs:
         runs-on: ubuntu-latest
         env:
           my_work_name: ${{ github.action}}
-          steps:
-            - name: Print the workflow name through context
-              run: echo "The workflow I am running is ${{my_work_name}}"
+        steps:
+          - name: Print the workflow name through context
+            run: echo "The workflow I am running is ${{my_work_name}}"
 
