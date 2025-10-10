@@ -1,0 +1,16 @@
+name: workflow context
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    my_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Set this github action variable
+              env:
+                my_work_name: ${{ github.action}}
+              run: echo "The workflow I am running is ${{my_work_name}}"
+
