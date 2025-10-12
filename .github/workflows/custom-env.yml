@@ -1,0 +1,12 @@
+name: Custom Env
+on: [push]
+
+env:
+    my_name: Sadish
+
+jobs:
+    print_name:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Printing name
+              run: echo "My name is ${{env.my_name}}"
