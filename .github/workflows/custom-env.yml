@@ -10,3 +10,11 @@ jobs:
         steps:
             - name: Printing name
               run: echo "My name is $my_name"
+
+            - name: Set var dynamically
+              run: echo "NAME=Richa" >> $GITHUB_env
+
+            - name: Print my friend
+              run: echo "My friend is $NAME"
+        
+            
